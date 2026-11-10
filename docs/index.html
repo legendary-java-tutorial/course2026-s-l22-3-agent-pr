@@ -5,4 +5,6 @@
 <input id="guess" type="number"> <button id="check">Проверить</button>
 <p id="msg"></p>
 <script>fetch("game.json").then(r => r.json()).then(g => { document.getElementById("greeting").textContent = g.greeting; });</script>
+<p id="best">Лучший результат: <span></span> попыток</p>
+<script>localStorage.getItem("bestScore")</script>
 </body></html>
