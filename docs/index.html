@@ -5,4 +5,6 @@
 <input id="guess" type="number"> <button id="check">Проверить</button>
 <p id="msg"></p>
 <script>fetch("game.json").then(r => r.json()).then(g => { document.getElementById("greeting").textContent = g.greeting; });</script>
+<button id="replay">Сыграть ещё</button>
+<script>function newGame(){ /* новое число, очистить поле и сообщение */ }</script>
 </body></html>
